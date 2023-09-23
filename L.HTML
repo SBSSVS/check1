@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Feedback and Screen Time Suggestions</title>
+    <link rel="stylesheet" href="l.css">
+</head>
+<body>
+    <header>
+        <h1>App Feedback and Screen Time Suggestions</h1>
+    </header>
+    <main>
+        <section id="feedbackSection">
+            <h2>App Feedback</h2>
+            <form id="feedbackForm">
+                <label for="appName">App Name:</label>
+                <input type="text" id="appName" name="appName" required>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+        <section id="suggestionSection">
+            <h2>Screen Time Suggestions</h2>
+            <div id="suggestion"></div>
+        </section>
+    </main>
+    <script src="l.js"></script>
+</body>
+</html>

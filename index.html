@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <!-- // script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const taskInput = document.getElementById('taskInput');
+    const addTaskButton = document.getElementById('addTask');
+    const taskList = document.getElementById('taskList');
+
+    addTaskButton.addEventListener('click', () => {
+        const taskText = taskInput.value.trim();
+        if (taskText) {
+            addTask(taskText);
+            taskInput.value = '';
+        }
+    });
+
+    function addTask(taskText) {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <span>${taskText}</span>
+            <button class="deleteTask">Delete</button>
+        `;
+        taskList.appendChild(listItem);
+
+        listItem.querySelector('.deleteTask').addEventListener('click', () => {
+            listItem.remove();
+        });
+    }
+
+    function fetchTasks() {
+        fetch('/api/tasks')
+            .then((response) => response.json())
+            .then((data) => {
+                data.forEach((taskText) => {
+                    addTask(taskText);
+                });
+            })
+            .catch((error) => console.error('Error:', error));
+    }
+
+    fetchTasks();
+});
+</server> -->
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <div id="app">
+        <input type="text" id="taskInput" placeholder="Add a task">
+        <button id="addTask">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

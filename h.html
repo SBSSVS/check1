@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultant Suggestion</title>
+    <link rel="stylesheet" href="h.css">
+</head>
+<body>
+    <header>
+        <h1>Consultant Suggestion</h1>
+    </header>
+    <main>
+        <section id="moodInputSection">
+            <h2>How Are You Feeling Today?</h2>
+            <form id="moodForm">
+                <label for="mood">Select Your Mood:</label>
+                <select id="mood" name="mood" required>
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                    <option value="anxious">Anxious</option>
+                    <option value="anxious">Dont know whats happening</option>
+                    <!-- Add more mood options as needed -->
+                </select>
+                <button type="submit">Find a Consultant</button>
+            </form>
+        </section>
+        <section id="consultantResultSection">
+            <h2>Suggested Consultant</h2>
+            <div id="consultantResult">
+                <!-- Consultant suggestion will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <script src="h.js"></script>
+</body>
+</html>

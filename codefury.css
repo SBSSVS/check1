@@ -1,0 +1,51 @@
+
+/* Default (Normal) State */
+a {
+    color: #00ffe1; /* Link text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover State */
+a:hover {
+    color: #0056b3; /* Link text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Active State (when clicked) */
+a:active {
+    color: #f56bff; /* Link text color on click */
+}
+
+/* Visited State (already visited link) */
+a:visited {
+    color: #c76c05; /* Link text color for visited links */
+}
+p {
+    color: rgb(205, 92, 203);
+    text-align: center;
+    text-decoration: double;
+
+}
+/* Style for all div elements */
+div {
+    width: 200px; /* Set the width */
+    height: 100px; /* Set the height */
+    background-color:cornsilk ; /* Set the background color */
+    color: #fff; /* Set the text color */
+    border: 2px solid #0089b3; /* Add a border */
+    padding: 10px; /* Add padding */
+    margin: 10px; /* Add margin */
+    text-align: center; /* Center the text horizontally */
+    display: inline-block;
+}
+
+/* Style for a specific div element with a class "special" */
+div.special {
+    background-color: #ff6b6b; /* Change the background color for this class */
+    color: #333; /* Change the text color for this class */
+}
+h1{
+    text-align: center;
+    text-decoration: double;
+    color: rgb(21, 124, 144);
+}

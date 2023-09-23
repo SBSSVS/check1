@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Your Feelings</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <header>
+        <h1>Express Your Feelings</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Share Your Feelings</h2>
+            <form id="feelingForm">
+                <label for="feeling">How are you feeling today?</label>
+                <textarea id="feeling" name="feeling" placeholder="Write your feelings here..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="feelingsList">
+            <h2>Recent Feelings</h2>
+            <ul id="feelings">
+                <!-- Recent feelings will be displayed here -->
+            </ul>
+        </section>
+    </main>
+    <script src="c.js"></script>
+</body>
+</html>

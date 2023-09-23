@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Website</title>
+    <link rel="stylesheet" href="e.css">
+</head>
+<body>
+    <header>
+        <h1>Private Website</h1>
+    </header>
+    <main>
+        <section id="loginSection">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="contentSection">
+            <h2>Welcome, <span id="loggedInUser">Guest</span>!</h2>
+            <p>This is a private section of the website.</p>
+            <button id="logoutButton">Logout</button>
+        </section>
+    </main>
+    <script src="e.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Close Page</title>
+</head>
+<body>
+    <h1>Auto Close Page</h1>
+    <p>This page will automatically close in 30 minutes.</p>
+
+    <script>
+        setTimeout(function () {
+            // Close the window/tab
+            window.close();
+
+            // If window.close() doesn't work due to browser restrictions,
+            // you can use the following code to navigate to a blank page.
+            // window.location.href = 'about:blank';
+        }, 30 * 60 * 1000); // 30 minutes in milliseconds
+    </script>
+</body>
+</html>
