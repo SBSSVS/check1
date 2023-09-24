@@ -1,61 +1,49 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
-    <!-- // script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const taskInput = document.getElementById('taskInput');
-    const addTaskButton = document.getElementById('addTask');
-    const taskList = document.getElementById('taskList');
-
-    addTaskButton.addEventListener('click', () => {
-        const taskText = taskInput.value.trim();
-        if (taskText) {
-            addTask(taskText);
-            taskInput.value = '';
-        }
-    });
-
-    function addTask(taskText) {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `
-            <span>${taskText}</span>
-            <button class="deleteTask">Delete</button>
-        `;
-        taskList.appendChild(listItem);
-
-        listItem.querySelector('.deleteTask').addEventListener('click', () => {
-            listItem.remove();
-        });
-    }
-
-    function fetchTasks() {
-        fetch('/api/tasks')
-            .then((response) => response.json())
-            .then((data) => {
-                data.forEach((taskText) => {
-                    addTask(taskText);
-                });
-            })
-            .catch((error) => console.error('Error:', error));
-    }
-
-    fetchTasks();
-});
-</server> -->
+    <title>Super Attractive Website</title>
+    <link rel="stylesheet" href="CODEFURY6.0MAINCODE.css">
 </head>
 <body>
-    <h1>To-Do List</h1>
-    <div id="app">
-        <input type="text" id="taskInput" placeholder="Add a task">
-        <button id="addTask">Add</button>
-        <ul id="taskList"></ul>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Super Attractive Website</h1>
+            <p>Discover the magic of colors and creativity.</p>
+            <button id="exploreButton">Explore</button>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a passionate team dedicated to creating visual wonders.</p>
+        </section>
+        <section id="services">
+            <h2>Our Colorful Services</h2>
+            <ul>
+                <li>Graphic Design</li>
+                <li>Web Development</li>
+                <li>Animation</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Feel the colors, and reach out to us!</p>
+        </section>
+        <button><a href ="/codefury.html">Time to chill I say !!</a></button>
+    </main>
+    <footer>
+        <p>&copy; 2023 Super Attractive Website</p>
+    </footer>
+    <script src="CODEFURY6.0MAINCODE.js"></script>
 </body>
 </html>
